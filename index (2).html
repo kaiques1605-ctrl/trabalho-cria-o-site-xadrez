@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChessKS - Aprenda Xadrez</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- barra de navegação -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo" onclick="loadPage('home')">
+                <i class="fas fa-chess-king"></i>
+                <span>ChessKS</span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#" class="nav-link" onclick="loadPage('home'); return false;">Início</a></li>
+                <li><a href="#" class="nav-link" onclick="loadPage('aberturas'); return false;">Aberturas</a></li>
+                <li><a href="#" class="nav-link" onclick="loadPage('taticas'); return false;">Táticas</a></li>
+                <li><a href="#" class="nav-link" onclick="loadPage('finais'); return false;">Finais</a></li>
+                <li><a href="#" class="nav-link" onclick="loadPage('sobre'); return false;">Sobre</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+  </div>
+        </div>
+    </nav>
+
+    <!-- Conteudo principal -->
+    <main id="mainContent" class="main-content"></main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>ChessKS</h4>
+                <p>Aprenda xadrez do zero ao profissional!</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="#" onclick="loadPage('home'); return false;">Início</a></li>
+                    <li><a href="#" onclick="loadPage('aberturas'); return false;">Aberturas</a></li>
+                    <li><a href="#" onclick="loadPage('taticas'); return false;">Táticas</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Plataformas</h4>
+                <ul>
+                    <li><a href="https://chess.com" target="_blank">Chess.com</a></li>
+                    <li><a href="https://lichess.org" target="_blank">Lichess</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 ChessKS. Desenvolvido para enxadristas.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
